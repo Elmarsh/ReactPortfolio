@@ -27,6 +27,8 @@ p{
 }
 
 
+
+
 .header{
   width: 100%;
   height: 136vh;
@@ -472,6 +474,46 @@ p{
 .Skills .seo span{
   top: -6px;
   right: 20px;
+}
+
+
+.portfolio{
+  background: #23263a;
+  padding: 100px 0;
+}
+
+
+
+
+
+
+
+/* PORTFOLIO__________ */
+
+
+
+.portfolio .portfolio_items{
+  padding: 120px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.portfolio .portfolio_items .item{
+ position: relative;
+ max-width:33%;
+}
+
+
+.portfolio .portfolio_items .item .content{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+
+.portfolio .portfolio_items .item img{
+  max-width: 150%;
 }
 
 
