@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p{
-  color: #fff;
+  color: #dfdfdf;
 }
 
 .container{
@@ -341,3 +341,142 @@ p{
 .about_info .info_contacts strong{
   color: #ff4a57;
 }
+
+
+
+
+
+
+/* SKILLS_________ */
+
+.Skills{
+  background: #1F2235;
+  padding: 100px 0;
+}
+
+.Skills .skills_left{
+  padding: 0 15px;
+}
+
+.Skills .row{
+  display: flex;
+}
+
+.Skills .skills_left .section_title{
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: block;
+  color: #ff4a57;
+}
+
+
+.Skills h1{
+  margin-bottom: 15px;
+}
+
+.Skills p{
+  line-height: 30px;
+  
+}
+
+.Skills .skills_button{
+  margin-top: 30px;
+  border: 2px solid #ff4a57;
+  font-weight: 500;
+  display: inline-block;
+  padding: 13px 40px;
+  border-radius: 50px;
+  font-size: 15px;
+  text-decoration: none;
+  transition: all 0.5s
+}
+
+.Skills .skills_button a{
+  color: #fff;
+  text-decoration: none;
+  
+}
+
+.Skills .skills_button:hover{
+  background:#ff4a57;
+}
+
+
+.Skills .skill_level{
+  position: relative;
+  margin:40px
+}
+
+
+.Skills span{
+  border: .125rem solid #fff;
+  position: absolute;
+  font-size: 12px;
+  padding: 0px 12px !important;
+  font-weight: 500;
+  border-radius: 6px;
+}
+
+
+
+.Skills .skill_level::before{
+  height: 5px;
+  content: "";
+  display: block;
+  position: absolute;
+  background: #ff4a57;
+  bottom: -10px;
+}
+
+.Skills .node span{
+  top: -6px;
+  right: 60px;
+}
+
+.Skills .node::before{
+  content: "";
+  width: 90%;
+}
+
+
+
+
+.Skills .python::before{
+  content: "";
+  width: 80%;
+}
+
+.Skills .python span{
+  top: -6px;
+  right: 110px;
+}
+
+
+.Skills .laravel::before{
+  content: "";
+  width: 70%;
+}
+
+.Skills .laravel span{
+  top: -6px;
+  right: 160px;
+}
+
+
+.Skills .seo::before{
+  content: "";
+  width: 98%;
+}
+
+.Skills .seo span{
+  top: -6px;
+  right: 20px;
+}
+
+
+
+
+
+
+
