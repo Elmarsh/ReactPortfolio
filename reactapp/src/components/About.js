@@ -20,12 +20,14 @@ const About = () => {
 
 
 
+    // Contact-info useState
 
-    const [contact] = useState("")
-
-
-
-
+    const [contact] = useState([
+        { id: 1, title: 'Name:', text: 'Jonathan Doe' },
+        { id: 2, title: 'Email:', text: 'example@domain.com' },
+        { id: 1, title: 'Phone:', text: '+1 023 454 345' },
+        { id: 1, title: 'LinkedIn:', text: 'Jonathan_123' }
+    ])
 
 
     return (
@@ -57,25 +59,14 @@ const About = () => {
 
                             <div className="info_contacts">
                                 <div className="row">
-                                    <div className="col-6">
-                                        <strong>Name:</strong>
-                                        <p>Jonathan Doe</p>
-                                    </div>
-
-                                    <div className="col-6">
-                                        <strong>Email:</strong>
-                                        <p>example@domain.com</p>
-                                    </div>
-
-                                    <div className="col-6">
-                                        <strong>Phone:</strong>
-                                        <p>+1 023 454 345</p>
-                                    </div>
-
-                                    <div className="col-6">
-                                        <strong>LinkedIn:</strong>
-                                        <p>Jonathan_123</p>
-                                    </div>  
+                                    {
+                                        contact.map((info, i) => (
+                                            <div className="col-6" key={i}>
+                                                <strong>{info.title}</strong>
+                                                <p>{info.text}</p>
+                                            </div>
+                                        ))
+                                    }
                                 </div>
                             </div>
                         </div>
