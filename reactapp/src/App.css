@@ -10,6 +10,17 @@ body{
   height: 5000px;
 }
 
+
+h1, h2, h3, h4, h5, h6 {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  color: #fff;
+}
+
+p{
+  color: #fff;
+}
+
 .container{
   margin: 0 auto;
   width: 1200px;
@@ -181,7 +192,7 @@ body{
 
 
 
-/* Services */
+/* SERVICES  ____________________ */
 
 
 .services{
@@ -253,6 +264,7 @@ body{
   display: inline-block;
   color: #ff4a57;
   margin-bottom: 15px;
+  transition: .8s linear;
 }
 
 .services_box .services_box-header{
@@ -274,7 +286,58 @@ body{
 
 .services_box:hover .commonIcons{
   color: white;
+  transform: rotateY(360deg);
 }
 
 
 
+
+
+
+
+/* ABOUT _________ */
+
+
+
+.about{
+  background: #23263a;
+  width: 100%;
+  padding: 100px 0;
+}
+
+
+.about_img{
+  padding: 30px;
+}
+
+.about_info h1{
+  margin-top: 120px;
+}
+
+
+.about_info .about_info_p1{
+  margin-top: 20px;
+}
+
+
+.about_info .about_info_p2{
+  margin-top: 20px;
+}
+
+
+
+
+.about_info .info_contacts{
+  margin-top: 30px;
+}
+
+
+.about_info .info_contacts .col-6{
+  margin-bottom: 15px;
+}
+
+
+
+.about_info .info_contacts strong{
+  color: #ff4a57;
+}
