@@ -17,14 +17,14 @@ import Skills from './components/Skills';
 function App() {
   return (
     <div className="App">
-      <Banner/>
-      <Nav/>
-      <Services/>
-      <About/>
-      <Skills/>
-      <Prices/>
-      <Footer/>
-      
+      <Banner />
+      <Nav />
+      <Services />
+      <About />
+      <Skills />
+      <Prices />
+      <Footer />
+
     </div>
   );
 }

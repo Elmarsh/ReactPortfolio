@@ -27,7 +27,7 @@ const Footer = () => {
                                 </ul>
                             </div>
 
-                            <div className = "copyright-text">
+                            <div className="copyright-text">
                                 <p>Copyright © 2020 Ami.Ke All Rights Reserved by ThemeBing.</p>
                             </div>
                         </div>
