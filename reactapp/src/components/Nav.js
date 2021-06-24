@@ -1,6 +1,10 @@
-
+import { useState } from 'react';
+import { FaAlignJustify } from 'react-icons/fa';
 
 const Nav = () => {
+
+    const [state, setState] = useState(true)
+
     return (
         <nav className="navbar">
             <div className="container">
@@ -13,20 +17,20 @@ const Nav = () => {
                         </li>
                     </ul>
 
+                    {
+                        state ? <ul className="navbar_right">
+                            <li><a href="!#">Home</a></li>
+                            <li><a href="!#">Services</a></li>
+                            <li><a href="!#">About</a></li>
+                            <li><a href="!#">Skills</a></li>
+                        </ul> : ""
 
-                    <ul className="navbar_right">
-                        <li><a href="!#">Home</a></li>
-                        <li><a href="!#">Services</a></li>
-                        <li><a href="!#">About</a></li>
-                        <li><a href="!#">Skills</a></li>
-                        <li><a href="!#">Portfolio</a></li>
-                        <li><a href="!#">Blog</a></li>
-                        <li><a href="!#">Contact</a></li>
-                    </ul>
-                    
+                    }
+
                 </div>
-
             </div>
+
+            <div onClick={() => setState(!state)} className="toggle"><FaAlignJustify /></div>
         </nav>
     )
 }

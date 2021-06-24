@@ -570,8 +570,136 @@ p{
 
 
 
+/* Footer____________ */
 
 
+.footer{
+  padding: 100px 0;
+  background: #1F2235;
+}
+
+
+.footer .justify-center{
+  justify-content: center;
+}
+
+
+.footer .footerSection-logo{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer .footerSection-logo img{
+  display: inline-block;
+  margin: 0 auto;
+  width: 130px;
+}
+
+.footer .footerSection .justify-center p{
+  color: #fff;
+  font-size: 18px;
+}
+
+
+.footer .justify-center .footerCircles ul{
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.footer .justify-center .footerCircles ul li{
+
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  background-color:#23263a ;
+  line-height: 60px;
+  text-align: center;
+  margin-right: 20px;
+  font-size: 20px;
+  transition: all 0.5s;
+  
+}
+
+
+.footer .justify-center .footerCircles ul li:hover{
+  background-color:#ff4a57 ;
+}
+
+.footer .justify-center .copyright-text p{
+  margin-top: 50px;
+}
+
+
+.toggle{
+  position: fixed;
+  top: 25px;
+  right: 20px;
+  background: #23263a;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+
+
+@media (max-width:768px) {
+  .container{
+    width: 100%;
+    padding: 0 50px;
+   
+  }
+
+  .toggle{
+    display: flex;
+    font-size: 30px;
+  }
+
+  .col-6{
+    width: 100%;
+  }
+
+  .navbar_right{
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    top: 100px;
+    background:#1f2235;
+  }
+
+
+  .navbar_right li a {
+      display: block;
+     padding: 20px 0;
+  }
+
+  .banner_image img{
+    display: none;
+  }
+
+
+  .prices .price{
+    height: 95%;
+  }
+
+  .prices .price .price_btn{
+    margin: 25px;
+    border: 2px solid #ff4a57;
+    color: #fff;
+    font-weight: 500;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 15px;
+    text-decoration: none;
+  }
+}
 
 
 
